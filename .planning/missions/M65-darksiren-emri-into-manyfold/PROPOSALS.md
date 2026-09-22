@@ -67,6 +67,12 @@ of five `H-MTC-*` rows there. Proposed addition to `## Related`:
 - [[hypothesis-ledger]] — five `H-MTC-*` hypothesis rows track this thread; two are live (`genmarg`, `realdata`)
 ```
 
+**P-2d — the deploy-key claim is now stale (verified).** `## Next Steps` states: *"pushes work
+only once Jasper adds the public key as a deploy key with write access on GitHub."* M65 pushed
+`mission/M65-darksiren-emri-into-manyfold` successfully over `git@github-darksiren` on 2026-09-22
+(exit 0, new branch created). **Write access is live.** Proposed: strike that caveat, since it may
+be discouraging sessions from pushing work that would otherwise survive.
+
 **P-2c — frontmatter `status: mature`** reads oddly for a thread with two live hypotheses, an
 unrun decisive experiment and a kill gate firing in two days. Suggest `status: active`. *Flagged,
 not insisted on — "mature" may be deliberate.*
