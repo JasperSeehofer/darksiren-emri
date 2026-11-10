@@ -136,6 +136,8 @@ tonight, T-1 could not legitimately launch. Ratifying R27 is an author action th
 governance side regardless of when the credential lands.
 *(2026-10-19: unchanged and still the author's. The direction of R27 is ruled — rail clause wins
 — but the erratum is not yet drafted or ratified; the governance package is mission M162.)*
+*(2026-10-20: the M162 erratum is ratified on card `m162-r1-t1-governance` — this gate is cleared;
+see § T-1 package hashes. Gate 1, M38, remains.)*
 
 **Do not book m1 as T-1.** m1 is a sealed *mock* at an alternative truth, sharing T-1's design but
 not its blinding: its truth (h = 0.67) is public and legible in the run directory name
@@ -161,3 +163,62 @@ seal-before-result ordering is **evidenced by git** (threshold block byte-identi
 four dossier commits, hash `c908790d…`, frozen ~11 h before the first array task); but the
 "both cells fire" reading is **CONTESTED, not a fact**, and the underlying posterior data is
 **absent from version control**.
+
+## T-1 package hashes (mission M162, 2026-10-19; RATIFIED on card `m162-r1-t1-governance`, relayed 2026-10-20)
+
+The T-1 governance package lives under
+`results/campaign51_20260728/realistic_20260729/graph1_20260901/exec/r-sealed-mock/` and
+`scripts/sealed_mock/` on branch `mission/M162-t1-governance-package`. It was cut from the work
+branch at `387cf33f`.
+- Status: **ratified** by the author on review card `m162-r1-t1-governance` (all six questions;
+  rulings verbatim in `.planning/missions/M162-t1-governance-package/publish-round-r1/RATIFICATION.md`).
+  The rule blocks below are now append-only: a change is a new dated erratum, never an edit.
+- **No draw, no pool, no simulation and no cluster command has happened.**
+- How to recompute: run `python scripts/sealed_mock/rule_block_hashes.py <file>`. Each value is
+  the sha256 of the exact text between the block markers. After ratification, any edit inside a
+  block makes its hash stop matching, and the draw script refuses a params block whose hash
+  differs from the value below.
+
+**Rule blocks of `ERRATUM_m2_R27_R28.md`:**
+
+| block | binds | sha256 |
+|---|---|---|
+| E1-pool-identity | R28: pool of record mix200k_20260728, 707 files, list-md5 `75f4030d…` | `120dc00242710bacc651018df05195356e3826c3af113b82d228e60089241f68` |
+| E2-precedence | R27(i): gates ⇒ rail wins (banked bound) ⇒ single band cell, else INTERMEDIATE | `5f6688ed0046d6c87bb7358cbfdef05a96c31600d967a981dfd5790adb04cdc9` |
+| E3-sigma-treatment | R27(ii): ρ = σ_h/σ_exp; outside [0.8, 1.25] re-assign at σ_exp; a change ⇒ INTERMEDIATE (σ-sensitive) | `fe8822b9341fffc3611ce9504fab139712fb3301f0f8380f10bb1769ada28f6c` |
+| E4-code-freeze | R24: tree `71acb98b0fd8a0f9d3aad9595eb9fc084cae0b6d`, HEAD == H_code strictly, dirty count 0 | `a974f3352abe956239f34f819bf0039b258b56331d50d6edc27e99607722b4c9` |
+| E5-pool-option | P2 first (paired, P2-0 ≥ 95 %, 1e-3 gate), P1 fallback ≤ 250 GPU-h | `5b65b897eb0afd2544396756de558ccdf498202df0c8fd39986eec99367dcbd3` |
+| E6-read-rule-gates | 55-node grid; whitelist; squeue/sacct only; two gate layers | `20d2f4b91814be242dc297e7c0c454a042ffc591426eca2ba95e630736169813` |
+| E7-dated-default | 2026-12-15, Europe/Berlin; what counts as a verdict; no third extension | `75c8e307e64e8ba0e01cc2a3617346cac6d50d60e5332e0c130d7f78a944faf1` |
+| E8-disposition | (m2) consequence rows, each a fresh RULE | `944a8ec2a0296598aedaaaf69c76bc2640c7e7503b49d822d23b12fc46c69283` |
+| T1-SEAL-PARAMS | the block `draw_sealed_h.py` reads (`--params-sha256`) | `0df280258bc1523f1c5c91cb1fd11745e595843e438dd3175293908c23200715` |
+
+**Companion files** (file sha256 and git blob at authoring; authoritative once committed):
+
+| file | sha256 | git blob |
+|---|---|---|
+| `ERRATUM_m2_R27_R28.md` | `46ef3846086b7b0ca9c0b3ac761aa73ab8d9e057f88aa2b293768e2da87edb1b` | — |
+| `POOL_OPTION_MEMO_m2.md` | `85e34bb1597dcbee354d02d3f5927fa2a1120f8fbdfc230450e959d8877887ca` | `78b97ecc` |
+| `UNSEAL_CEREMONY_m2.md` | `012f13adb38af67df72f8b1f87ccb9a82cf88e948a3727eb917ec8a4a825e579` | `6b455a1e` |
+| `PREREG_EXP-MTC-T1.md` | `e4458bb55ef5a377f9eaabdd62ed521d2d708216640dc9be7e84856c9fc3fbfe` | `9d26a44a` |
+| `scripts/sealed_mock/draw_sealed_h.py` | `23729a186340678ccc31485656505be48493fbe78a95d585e919197c9c5eba50` | `bd74dd54` |
+| `scripts/sealed_mock/rule_block_hashes.py` | `83fe78fea77690872145a3167769e1d1948419ef8241ce33173ad4575d6c0b32` | `55469936` |
+
+**Unchanged pins that the package relies on:**
+- the m1 dossier threshold block md5 `c908790d…` (M65 `VERIFY-R1.md` §4). M162 appended a pointer
+  at the end of the dossier; the threshold block is untouched.
+- `darksiren_emri/` tree `71acb98b…`, with dirty count 0 on this branch.
+
+**Effect on "Active experiment" above:** Gate 2 (the R27 launch bar) is **cleared** by the
+ratification of card `m162-r1-t1-governance`. Gate 1 (the cluster credential, M38) is unchanged. T-1 is due **2026-12-15**; that is
+the dated default, and there is no third extension without a new ruling (the 2026-09-23 date in
+kill criterion 3 is superseded by `ask-20261018-w223027afac` R2). m1 is banked **INTERMEDIATE**
+(R25, `ask-20261018-w224256df6b`), which supersedes the "UNRESOLVED-AS-REGISTERED" claim row above.
+
+**Ruling on kill criterion 1 (card `m162-r1-t1-governance` Q4):** a (m2) TRANSFER result, a
+posterior closing at h_inj − 0.064, **passes** anti-tuning and **does not trigger** kill criterion 1.
+The criterion's text above is the author's and is unchanged; this ruling fixes how the erratum's
+E-8 TRANSFER row maps onto it. **Q5:** the read-only cluster reads R-1/R-2/R-3
+(`POOL_OPTION_MEMO_m2.md` §5) are approved inside an M38 window; they are not yet run.
+*Correction 2026-10-22 (R1c):* Q5's answer "Approve (M38 window)" also covers R-3 (the P2 pairing
+seeds), because the question text named "R-1 … R-2 … R-3"; an earlier version of this line said R-3 was not named.
