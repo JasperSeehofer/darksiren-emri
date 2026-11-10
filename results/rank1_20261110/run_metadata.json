@@ -1,0 +1,18 @@
+{
+  "git_commit": "14f7fd2365116df4c508ca9cca1807ec6cf3b00b",
+  "timestamp": "2026-11-10T22:17:13.455896+00:00",
+  "argv": [
+    "/home/ops/Repositories/darksiren-emri-wt/M192-darksiren-rank1-information-budget/analysis/rank1/budget.py",
+    "--seed",
+    "192000",
+    "--out",
+    "results/rank1_20261110"
+  ],
+  "seed_base": 192000,
+  "n_real": 8,
+  "inputs": {
+    "seed61000": "9a1f2a14384a9281c97ca3be312ddaab",
+    "seed62000": "0dc925a59a5983afa797e1024fdec42e"
+  },
+  "prereg": ".planning/missions/M192/PREREGISTRATION_RANK1.md"
+}

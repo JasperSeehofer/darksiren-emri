@@ -7,6 +7,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added (Rank-1 information budget, mission M192 item 2, 2026-11-10)
+- **`analysis/rank1/budget.py`** (new; nothing under `darksiren_emri/` changes): a Fisher information
+  budget on the frozen seed61000/seed62000 event tables. It gives σ_h conditional and marginalised
+  (κ, s, a, σ_rel) per information channel, redshift bin and catalogue scenario, GLADE+ today first.
+  Derivation `docs/derivations/rank1_information_budget.md`; PHYSICS-GATE-LEDGER row
+  presented / PENDING-AUTHOR. Readout `results/rank1_20261110/BUDGET_READOUT.md`; **provisional**
+  until the author approves the derivation. Limiting-case tests in `darksiren_emri_test/rank1/`.
+
 ### Changed (paper, mission M192 item 1, 2026-11-10)
 - **Paper: four thesis-era remnants cleared and the study's aim restated** (rulings 1 and 3,
   2026-11-10). M193's done-criterion grep re-run with `/usr/bin/grep`: 0 lines. Removed the thesis
