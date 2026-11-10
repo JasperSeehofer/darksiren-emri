@@ -64,14 +64,12 @@ reduces the number of candidate host galaxies per event, making the
 statistical galaxy catalog method particularly powerful.
 
 Laghi et al.~\cite{Laghi:2021pqk} performed the first comprehensive
-study of $\HH$ inference from EMRI dark sirens with LISA, using the
-galaxy catalog approach.  Their analysis adopted a simplified treatment
-of EMRI parameter estimation errors, assigning a fixed fractional
-luminosity distance uncertainty of $\sigma(\dL)/\dL = 10\%$ to all
-detected events, and used only the GW-measured sky position and
-distance to cross-match with galaxy catalogs.  Under these assumptions,
-they projected $\HH$ constraints at the $\sim\!4\%$ level from a
-four-year LISA mission.
+study of $\HH$ inference from EMRI dark sirens with LISA, using
+Fisher-matrix errors from the population models of
+Ref.~\cite{Babak:2017tow} and a mock catalogue complete above
+$M_* \sim 10^{10}\,M_\odot$ to $z \lesssim 0.5$; they found $\HH$ to
+1.6--3.6\% (90\% credible) for a four-year mission (2.5\% for model M1)
+and 1.1--2.6\% for ten years.
 
 In this work, we extend the EMRI dark siren framework by exploiting an
 additional observable that LISA measures with remarkable precision: the
@@ -82,10 +80,13 @@ far exceeding the precision of any electromagnetic mass
 proxy~\cite{Babak:2017tow}.  Galaxy catalogs, meanwhile, provide
 stellar masses $\Mstellar$ for their entries, which can be mapped to
 black hole masses through empirical scaling
-relations~\cite{Reines:2015moa}.  The comparison between the
-GW-measured $\Mz/(1+z)$ and the catalog-predicted $\Mbh$ for each
-candidate galaxy provides a powerful additional discriminant that was
-not exploited in Ref.~\cite{Laghi:2021pqk}.
+relations~\cite{Reines:2015moa}.  Weighting EMRI host candidates by
+such a relation was proposed as future work by Laghi
+et al.~\cite[Sec.~6.4]{Laghi:2021pqk}, and Zhu
+et al.~\cite{Zhu:2024qpp} wrote the redshifted-mass comparison into an
+EMRI likelihood, using it at least to estimate catalogue completeness;
+neither quantifies the gain on $\HH$ with a scattered relation and an
+incomplete catalogue.
 
 We present a complete EMRI dark siren inference pipeline that
 incorporates Fisher-matrix-based Cram\'er--Rao bounds for all
@@ -93,15 +94,15 @@ incorporates Fisher-matrix-based Cram\'er--Rao bounds for all
 a completeness correction following Gray et
 al.~\cite{Gray:2019ksv}, and a detection probability model
 accounting for EMRI population and selection effects.
-We perform the first direct comparison of two likelihood
+We compare two likelihood
 configurations: a baseline ``without MBH mass'' channel that uses only
 the GW-measured luminosity distance and sky position $(\dL, \varphi,
 \theta)$ to identify candidate hosts, and an extended ``with MBH
 mass'' channel that additionally incorporates the redshifted mass
-$\Mz$.  We find that including the MBH mass information tightens the
-$\HH$ constraint from $\sim\!4\%$ to $\sim\!1.8\%$ fractional
-precision, demonstrating that the mass channel substantially enhances
-the dark siren method for EMRIs.
+$\Mz$.  The reference forecasts assume catalogues that may not hold the
+typical host; we quantify what remains.
+\pending{Rank-1: what the mass channel adds to the $\HH$ posterior,
+conditional and marginalised}.
 
 The remainder of this paper is organized as follows.
 Section~\ref{sec:method} describes the signal model, parameter

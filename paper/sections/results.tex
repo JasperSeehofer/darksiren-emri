@@ -128,44 +128,18 @@ $\theta_S$ only) and \emph{with} the MBH mass channel (additionally
 using $\Mz$).
 
 \paragraph{Without MBH mass.}
-The posterior using only distance and sky localization yields
-\pending{production run value for $h^\mathrm{(no\,mass)}$}
-\begin{equation}
-  h^\mathrm{(no\,mass)} = 0.712 \pm 0.028 \,,
-  \label{eq:h0_no_mass}
-\end{equation}
-at $1\sigma$, corresponding to $\sim 4\%$ measurement precision
-(\pending{update with production run precision}).
-The value quoted above is the thesis baseline with $\pdet = 1$.
+\pending{Rank-1 / production value for $h^\mathrm{(no\,mass)}$}. The
+thesis-era baseline ($\pdet = 1$) is withdrawn: it predates the current
+pipeline and no surviving result file reproduces it.
 
 \paragraph{With MBH mass.}
-Including the redshifted MBH mass tightens the posterior to
-\pending{production run value for $h^\mathrm{(mass)}$}
-\begin{equation}
-  h^\mathrm{(mass)} = 0.742 \pm 0.013 \,,
-  \label{eq:h0_with_mass}
-\end{equation}
-at $1\sigma$, corresponding to $\sim 1.8\%$ measurement precision
-(\pending{update with production run precision}).
-The value quoted above is the thesis baseline with $\pdet = 1$.
+\pending{Rank-1 / production value for $h^\mathrm{(mass)}$}. The
+thesis-era baseline ($\pdet = 1$) is withdrawn: it predates the current
+pipeline and no surviving result file reproduces it.
 
-\paragraph{Improvement factor.}
-Including $\Mz$ in the inference tightens the $\HH$ constraint by a
-factor of $\sim 2$ in precision (from $\sim 4\%$ to $\sim 1.8\%$ in the
-$\pdet = 1$ baseline). The physical mechanism is as follows. Without the
-mass channel, each GW detection constrains a degenerate combination of
-$\dL$ and $z$: for a given measured $\dL$ at trial $\HH$, many candidate
-host galaxies at different redshifts can reproduce the observed distance.
-The number of viable hosts per detection ranges from $\sim 10$ to
-$\sim 10^4$, depending on the sky localization volume and the local
-galaxy density. Including $\Mz$ breaks this degeneracy: only galaxies
-whose inferred BH mass satisfies
-$\Mbh \approx \Mz / (1+z)$ contribute to the likelihood. Since the GW
-measurement determines $\Mz$ to $\lesssim 10^{-6}$ fractional precision
-while galaxy BH masses are uncertain at the $\sim 10\%$ level, the mass
-match effectively reduces the number of viable hosts by one to two orders
-of magnitude, concentrating the single-event likelihood around the
-correct redshift and hence the correct $\HH$.
+\paragraph{Mass-channel ablation.}
+\pending{Rank-1: $\sigma_h$ with and without the mass term, conditional
+and marginalised, per scenario.}
 
 \begin{figure}[t]
   \centering
@@ -175,35 +149,26 @@ correct redshift and hence the correct $\HH$.
   (injected value). Shaded $1\sigma$ bands.}
   \caption{Posterior on the Hubble constant $\HH$ from
   \pending{N\_det} EMRI dark siren events. The blue curve uses only
-  the luminosity distance and sky position
-  (Eq.~\ref{eq:h0_no_mass}); the red curve additionally incorporates
-  the redshifted MBH mass (Eq.~\ref{eq:h0_with_mass}). The vertical
-  dashed line marks the injected value $h = 0.73$. Including the mass
-  information tightens the constraint by a factor of $\sim 2$.}
+  the luminosity distance and sky position; the red curve additionally
+  incorporates the redshifted MBH mass. The vertical
+  dashed line marks the injected value $h = 0.73$.}
   \label{fig:posterior_comparison}
 \end{figure}
 
-Figure~\ref{fig:single_event} illustrates this effect at the level of
-individual detections. The single-event likelihood
-$p(d_\mathrm{GW}^i \mid h)$ without MBH mass (left panels) is
-broad and often multi-modal, reflecting the multiple galaxy hosts
-consistent with the GW measurement. With MBH mass (right panels), the
-single-event likelihood is sharply peaked near the injected $h$-value,
-because the mass match selects only a handful of galaxies at the correct
-redshift.
+\pending{Rank-1: single-event likelihoods $p(d_\mathrm{GW}^i \mid h)$
+with and without the mass term (Fig.~\ref{fig:single_event}).}
 
 \begin{figure}[t]
   \centering
   % \includegraphics[width=\columnwidth]{figures/single_event_likelihoods.pdf}
   \todo{Figure: Single-event likelihoods for 4 representative
   detections. Left column: without MBH mass (broad/flat). Right column:
-  with MBH mass (peaked near $h_\mathrm{true}$).}
+  with MBH mass.}
   \caption{Single-event likelihoods $p(d_\mathrm{GW}^i \mid h)$ for
   four representative EMRI detections at different redshifts.
   \emph{Left column:} using only $\dL$ and sky position --- the
   likelihoods are broad due to the large number of candidate hosts.
-  \emph{Right column:} additionally using $\Mz$ --- the mass match
-  suppresses non-host galaxies, producing sharply peaked likelihoods.}
+  \emph{Right column:} additionally using $\Mz$.}
   \label{fig:single_event}
 \end{figure}
 
@@ -212,10 +177,9 @@ To assess the scaling of the $\HH$ constraint with the number of
 detections, we evaluate the posterior on random subsets of
 \pending{subset size} events drawn from the full catalog. The
 posterior width narrows approximately as $N_\mathrm{det}^{-1/2}$
-for both channels, as expected for independent measurements. With $\Mz$
-information, a precision of $\sim 2\%$ is reached with
-$\sim 200$ events, while the distance-only channel requires the full
-catalog for a comparable constraint.
+for both channels, as expected for independent measurements.
+\pending{Rank-1: posterior width against the number of events, per
+likelihood channel.}
 
 \begin{figure}[t]
   \centering
@@ -226,8 +190,7 @@ catalog for a comparable constraint.
   EMRI detections. Points show the median $1\sigma$ width from
   \pending{N\_subsets} random subsets; error bars indicate the
   16th--84th percentile range. The dashed line shows the expected
-  $N^{-1/2}$ scaling. The ``with mass'' channel (red) reaches $2\%$
-  precision with $\sim 200$ events.}
+  $N^{-1/2}$ scaling.}
   \label{fig:posterior_convergence}
 \end{figure}
 
@@ -292,10 +255,8 @@ with the requirement that the combined likelihood interpolates
 monotonically between the two terms, have been verified analytically and
 numerically.
 
-\pending{Show the effect of completeness correction on the $\HH$
-posterior bias. Thesis baseline without correction: $h = 0.712$ (without
-mass) and $h = 0.742$ (with mass). Production run with correction
-expected to reduce bias toward $h_\mathrm{true} = 0.73$.}
+\pending{Show the effect of the completeness correction on the $\HH$
+posterior bias (production run, $h_\mathrm{true} = 0.73$).}
 
 %% ============================================================
 \subsection{Systematic effects}
@@ -324,9 +285,9 @@ candidate host galaxies within the $3\sigma$ sky localization and distance
 error volume. The true host contribution to the single-event likelihood
 can be as small as $\sim 0.6\%$ for high-redshift detections
 ($z \gtrsim 0.12$), where the galaxy density is high and the distance
-measurement is less constraining. Including $\Mz$ reduces the number of
-viable hosts by one to two orders of magnitude, making the analysis more
-robust to catalog density fluctuations.
+measurement is less constraining.
+\pending{Rank-1 census of candidates per event with and without the mass
+window, GLADE+ today}.
 
 \paragraph{Detection probability normalization.}
 The detection probability $\pdet$ enters both the numerator and
@@ -366,17 +327,6 @@ inference channels.
       \pending{X.X} \\
     $N_\mathrm{det}$ used &
       \multicolumn{2}{c}{\pending{NNN}} \\
-    \hline
-    \multicolumn{3}{l}{\emph{Thesis baseline ($\pdet = 1$):}} \\
-    MAP estimate &
-      $0.712$ &
-      $0.742$ \\
-    $1\sigma$ width &
-      $0.028$ &
-      $0.013$ \\
-    Precision (\%) &
-      $\sim 4$ &
-      $\sim 1.8$ \\
     \hline\hline
   \end{tabular}
 \end{table}
