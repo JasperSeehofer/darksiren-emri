@@ -7,6 +7,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed (paper, 2026-11-10)
+- **Paper: the thesis-era "M_z halves the H0 error" headline is withdrawn** (ruling 1, 2026-11-10;
+  mission M193). 23 statements in `paper/main.tex` and `paper/sections/{introduction,discussion,
+  results,conclusions}.tex` (rows P2-P25 except P12): the 4 % -> 1.8 % / factor ~2 claim, the
+  thesis H0 figures (0.712 +- 0.028, 0.742 +- 0.013, ~2 % with ~200 events), "first application" and
+  "first direct comparison" are removed; every place a Rank-1 number goes carries a `\pending` marker.
+  The account of Laghi et al. 2021 is corrected (Fisher errors from Babak et al. 2017, not a fixed
+  10 %; Sec. 6.4 proposed mass weighting as future work). Zhu et al. 2024 (arXiv:2403.04950) is
+  cited; its record `Zhu:2024qpp` is appended to `paper/references.bib` verbatim from INSPIRE.
+
 ### Added (workspace lifecycle check, 2026-10-18)
 - **`cluster/workspace_check.sh`** (new, read-only by default): name in `cluster.env` resolves;
   expiry/extensions; other workspaces still holding data (unfinished move); symlinks pointing into

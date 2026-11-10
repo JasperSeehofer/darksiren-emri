@@ -2,11 +2,9 @@
 % Target: PRD two-column (revtex4-2)
 % Macros used: \HH, \dL, \Mz, \Mbh, \Mstellar, \pGW, \pdet, \Lcat, \Lcomp, \SNR, \pending, \todo
 
-The results of Sec.~\ref{sec:results} demonstrate that the redshifted MBH
-mass $\Mz$ provides a powerful additional handle for dark siren cosmology
-with EMRIs.  We now place these findings in the context of prior work,
-discuss the physical mechanism behind the improvement, and assess the
-limitations of the analysis.
+We now place the analysis in the context of prior work, discuss what
+the MBH mass can and cannot add, and assess the limitations of the
+analysis.
 
 %% ============================================================
 \subsection{Comparison with previous work}
@@ -18,20 +16,26 @@ Laghi~\emph{et~al.}~\cite{Laghi:2021pqk}, who performed the first
 comprehensive study of EMRI dark sirens as probes of $\HH$ with LISA.
 Our analysis extends their work in four significant ways.
 
-First, Laghi~\emph{et~al.}\ adopted a fixed fractional luminosity
-distance uncertainty of $\sigma_{\dL}/\dL = 10\%$ for all detected
-EMRIs, independent of source parameters.  We replace this simplification
-with the full Cram\'{e}r--Rao bound derived from the $14 \times 14$
-Fisher information matrix (Sec.~\ref{sec:fisher}), which captures the
+First, Laghi~\emph{et~al.}\ took Fisher-matrix errors from the
+population models of Ref.~\cite{Babak:2017tow}; we compute the full
+Cram\'{e}r--Rao bound from the $14 \times 14$ Fisher information matrix
+for every simulated event (Sec.~\ref{sec:fisher}), which captures the
 dependence of $\sigma_{\dL}$ on SNR, sky position, mass ratio, and spin.
 The resulting per-event distance uncertainties span a wide range, with
 some high-SNR detections achieving $\sigma_{\dL}/\dL < 1\%$.
 
 Second, we introduce the MBH mass channel, which exploits the precise
 measurement of $\Mz$ from the gravitational waveform as an additional
-discriminant for host galaxy identification.  This channel is absent from
-Ref.~\cite{Laghi:2021pqk} and is, to our knowledge, the first
-application of the MBH mass information to EMRI dark siren cosmology.
+discriminant for host galaxy identification.  The idea is not new:
+Laghi~\emph{et~al.}\ proposed it as future work
+(Ref.~\cite{Laghi:2021pqk}, Sec.~6.4), and
+Zhu~\emph{et~al.}~\cite{Zhu:2024qpp} included a term comparing $\Mz$
+with $(1+z)\hat{M}(L_K)$ in their EMRI likelihood
+($0.4\,\mathrm{dex}$, window $[-3\sigma, +2\sigma]$), used at least for
+completeness and without an ablation of the mass term.  What this work
+adds is that ablation, mass weighting on and off, on a real catalogue
+(GLADE+) \pending{Rank-1: with the relation's scatter drawn in the mock
+and its normalisation and scatter marginalised}.
 
 Third, we employ the real GLADE+ galaxy catalog~\cite{Dalya:2021ewn},
 which includes spectroscopic and photometric redshifts, stellar masses,
@@ -69,14 +73,15 @@ digitized data rather than derived from a self-consistent luminosity
 function model (see Sec.~\ref{sec:caveats}).
 
 %% ============================================================
-\subsection{Physical interpretation of the MBH mass improvement}
+\subsection{What the MBH mass can and cannot add}
 \label{sec:mass_interpretation}
 %% ============================================================
 
-The factor of $\sim 2$ improvement in $\HH$ precision from the MBH mass
-channel (from $\sim 4\%$ to $\sim 1.8\%$ in the $\pdet = 1$ baseline)
-has a clear physical origin: the mass measurement breaks the
-luminosity-distance--redshift degeneracy inherent in dark siren analyses.
+The mass channel's information is limited by the scatter of the
+black-hole--galaxy relation, not by the precision of $\Mz$. The
+thesis-era factor $\sim 2$ is withdrawn.
+\pending{Rank-1: the gain on $\sigma_{\HH}$ at the relation's scatter,
+per event and in total}.
 
 Without the mass channel, a GW detection constrains $\dL$ (and sky
 position) but not $z$ independently.  For a given trial value of $\HH$,
@@ -92,22 +97,17 @@ With the mass channel, the precisely measured $\Mz$ imposes an
 additional constraint: the true host must satisfy
 $\Mbh \approx \Mz / (1+z)$, where $z$ is determined by $\dL$ and the
 trial $\HH$.  Since the GW measurement determines $\Mz$ to a fractional
-precision of $\lesssim 10^{-6}$ (Sec.~\ref{sec:pe_validation}), while
-the catalog masses inferred from the $\Mbh$--$\Mstellar$ scaling
-relation~\cite{Reines:2015moa} carry uncertainties of $\sim 20\%$, the
-mass match effectively acts as a narrow filter.  Only galaxies whose
-inferred BH mass is consistent with $\Mz / (1+z)$ within the scaling
-relation scatter contribute significantly to the likelihood
-[Eq.~\eqref{eq:Lcat_mass}].  This typically reduces the number of viable
-hosts by one to two orders of magnitude, concentrating the single-event
-likelihood around the correct redshift and thus the correct $\HH$.
+precision of $\lesssim 10^{-6}$ (Sec.~\ref{sec:pe_validation}), the
+width of the mass filter is set by the scatter of the
+$\Mbh$--$\Mstellar$ relation (see below), not by the GW measurement.
+\pending{Rank-1 census: how many candidates per event the mass window
+removes, and how often it removes the true host}.
 
-The improvement is largest for detections in regions of high galaxy
+Any gain from the mass channel should be largest for detections in regions of high galaxy
 density (large angular extent and moderate distance), where the standard
 channel admits the most candidate hosts.  Conversely, for isolated
 detections in underdense regions where only a handful of galaxies lie
-within the error volume, the mass information provides a smaller
-marginal improvement because the host galaxy is already effectively
+within the error volume, the mass information adds less because the host galaxy is already effectively
 identified by proximity.
 
 We note that the efficacy of the mass channel is limited by the accuracy
