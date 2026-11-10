@@ -1,0 +1,40 @@
+{
+  "id": "m192-r1-rank1",
+  "title": "M192 R1 — the Rank-1 information budget: provisional verdict and what round 2 adds",
+  "date": "2026-11-10",
+  "status": "open",
+  "kind": ["ruling", "ruling"],
+  "summary": "Provisional verdict: INCONCLUSIVE. R_GLADE is undefined at the registered priors because the Fisher matrix plus priors is not positive definite along (h, κ). A post-hoc check gives R ≈ 2.7 (line 1.30), so population dominance is indicated, not established. GLADE+ today: σ_h 6.9 %, all of it population information; 20 spectroscopic hosts give 0.5 %, population-free. Skip a question and my suggested answer applies.",
+  "questions": [
+    {
+      "text": "Q1 [RULE] C-10: approve the derivation docs/derivations/rank1_information_budget.md (model, references, dimensional analysis, five limiting cases, tests)? Until you do, every budget number is provisional. Skip it and my suggested answer applies.",
+      "kind": "ruling",
+      "chips": [
+        {"label": "Approve the derivation", "consequence": "The ledger row becomes APPROVED; the numbers lose 'provisional', and the verdict stays INCONCLUSIVE as registered."},
+        {"label": "Approve with changes", "consequence": "Name them in free text; a round-2 amendment file re-derives and re-runs; the current read stays on record."},
+        {"label": "Do not approve", "consequence": "The budget stays a draft; no number from it enters the paper or the vault."}
+      ],
+      "recommend": "Approve the derivation"
+    },
+    {
+      "text": "Q2 [RULE] Beside the named empty-catalogue control, what does round 2 add: the expected-Fisher fix plus the joint hierarchical likelihood (turns INCONCLUSIVE into a number), or Rank 2, the reverse problem (weak at GLADE+/LSST depth here)? Skip it and my suggested answer applies.",
+      "kind": "ruling",
+      "chips": [
+        {"label": "Expected Fisher + joint likelihood", "consequence": "Round 2 registers an expected-Fisher read of R_GLADE, then the joint likelihood; the empty-catalogue control runs beside it."},
+        {"label": "Rank 2, the reverse problem", "consequence": "Round 2 forecasts the BH–galaxy relation from EMRI hosts; R_GLADE stays INCONCLUSIVE for now."},
+        {"label": "Rank 3, golden-event follow-up", "consequence": "Round 2 costs spectroscopy for the best events (0.5 % from 20 here); R_GLADE stays INCONCLUSIVE."}
+      ],
+      "recommend": "Expected Fisher + joint likelihood"
+    }
+  ],
+  "suggested": [
+    ["Approve the derivation", "Approve with changes", "Do not approve"],
+    ["Expected Fisher + joint likelihood", "Rank 2, the reverse problem", "Rank 3, golden-event follow-up"]
+  ],
+  "links": [
+    {"label": "The Rank-1 note: verdict, tables, what it licenses (react)", "href": "/app/previews/m192-r1-rank1/RANK1_NOTE.md"},
+    {"label": "The derivation you are asked to approve (react)", "href": "/app/previews/m192-r1-rank1/rank1_information_budget.md"},
+    {"label": "Budget readout, every table and diagnostic (context)", "href": "/app/previews/m192-r1-rank1/BUDGET_READOUT.md"},
+    {"label": "Toy readout, six variants and diagnostics (context)", "href": "/app/previews/m192-r1-rank1/TOY_READOUT.md"}
+  ]
+}

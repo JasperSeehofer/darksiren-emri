@@ -1,0 +1,36 @@
+{
+  "id": "m192-r1-paper",
+  "title": "M192 R1 — the paper's wording: the title and the scatter sentence",
+  "date": "2026-11-10",
+  "status": "open",
+  "kind": ["ruling", "ruling"],
+  "summary": "M192 cleared the four thesis-era remnants and restated the study's aim as ruling 3's question (appendix). Two wordings are yours: the title still promises an H0 constraint from the mass, and the Reines–Volonteri 0.55 dex scatter is called 'intrinsic' twice. Skip a question and my suggested answer applies.",
+  "questions": [
+    {
+      "text": "Q1 [RULE] The title reads 'Constraints on the Hubble constant from EMRI dark sirens with LISA using the massive black hole mass', the framing ruling 1 withdrew. Change it? Skip it and my suggested answer applies.",
+      "kind": "ruling",
+      "chips": [
+        {"label": "Use 'What LISA EMRI dark sirens measure…'", "consequence": "Title: 'What LISA EMRI dark sirens measure: the H0 information budget once population, selection and the BH–galaxy relation are marginalised'."},
+        {"label": "Use the short form", "consequence": "Title: 'The H0 information in LISA EMRI dark sirens, conditional and marginalised'."},
+        {"label": "Keep the current title", "consequence": "No change; the title keeps the withdrawn mass-channel framing."}
+      ],
+      "recommend": "Use 'What LISA EMRI dark sirens measure…'"
+    },
+    {
+      "text": "Q2 [RULE] P12: discussion.tex:115–116 and :175–176 call RV15's 0.55 dex an 'intrinsic scatter'. Reword both to 'about 0.55 dex (RV15, AGN sample)' and note that normalisation and scatter are marginalised in the budget? Skip it and my suggested answer applies.",
+      "kind": "ruling",
+      "chips": [
+        {"label": "Reword both", "consequence": "A round-2 text edit rewords both sentences as suggested; no number changes."},
+        {"label": "Keep as is", "consequence": "Both sentences stay; the budget's priors on a and σ_rel are unaffected."}
+      ],
+      "recommend": "Reword both"
+    }
+  ],
+  "suggested": [
+    ["Use 'What LISA EMRI dark sirens measure…'", "Use the short form", "Keep the current title"],
+    ["Reword both", "Keep as is"]
+  ],
+  "links": [
+    {"label": "The two wordings, with the current text and the options (react)", "href": "/app/previews/m192-r1-paper/PAPER_WORDING.md"}
+  ]
+}
