@@ -232,3 +232,10 @@ E-8 TRANSFER row maps onto it. **Q5:** the read-only cluster reads R-1/R-2/R-3
 (`POOL_OPTION_MEMO_m2.md` §5) are approved inside an M38 window; they are not yet run.
 *Correction 2026-10-22 (R1c):* Q5's answer "Approve (M38 window)" also covers R-3 (the P2 pairing
 seeds), because the question text named "R-1 … R-2 … R-3"; an earlier version of this line said R-3 was not named.
+
+## Rank 1 pre-registration (mission M192, 2026-11-10)
+
+`.planning/missions/M192/PREREGISTRATION_RANK1.md` — md5 `90dc4200f95f82c8a64b26f302f739c6` — committed before any number of
+the information budget (item 2) or the line-of-sight toy (item 4) was computed (C-14). Never
+edited after its commit; an amendment is a new dated file. Kill criterion (H-MTC-popdom): R_GLADE =
+σ_h,marg / σ_h,cond in the GLADE+-today scenario at the registered priors; R_GLADE < 1.30 refutes.
