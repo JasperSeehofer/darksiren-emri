@@ -7,6 +7,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed (paper, mission M192 item 1, 2026-11-10)
+- **Paper: four thesis-era remnants cleared and the study's aim restated** (rulings 1 and 3,
+  2026-11-10). M193's done-criterion grep re-run with `/usr/bin/grep`: 0 lines. Removed the thesis
+  baseline N_det = 223 (`results.tex`), the two statements that the results rest on the withdrawn
+  p_det = 1 baseline (`results.tex`, `discussion.tex`) and the thesis-era Δh ~ 0.02
+  (`results.tex`); each is now a `\pending{Rank-1 budget}` marker. `appendix_parameters.tex`
+  states the aim as ruling 3's question (how much H0 information survives marginalising the
+  population, the selection and the black-hole--galaxy relation). The title and the
+  Reines--Volonteri scatter wording go to the author (card `m192-r1-paper`).
+
 ### Changed (paper, 2026-11-10)
 - **Paper: the thesis-era "M_z halves the H0 error" headline is withdrawn** (ruling 1, 2026-11-10;
   mission M193). 23 statements in `paper/main.tex` and `paper/sections/{introduction,discussion,
