@@ -72,3 +72,12 @@ ratified on card `m162-r1-t1-governance` (relayed 2026-10-20):
 - (m1) stays banked INTERMEDIATE (R25) and is not re-opened.
 - D-4 was taken by M65 round 2: the m1 read inputs are tracked (main `3e23824b`), and the scorer
   `t0_read.py` is recorded as unrecovered.
+
+## Rows appended 2026-11-10 by mission M192 (Rank 1, round 1)
+
+| # | convention | value | set by | criticality |
+|---|---|---|---|---|
+| C-28 | Every σ_h is reported twice | Every σ_h the Rank-1 work reports is given **conditional** on the fiducial population, selection and relation **and marginalised** over them at registered priors, with their ratio R = σ_marg/σ_cond. Priors are pre-registered with sources before any number | advisor § E step 7; ruling 3 (2026-11-10); `.planning/missions/M192/PREREGISTRATION_RANK1.md` §1, §3 | high |
+| C-29 | Scenario axis, GLADE+ today first | Every Rank-1 σ_h carries the catalogue scenario axis — GLADE+ today, LSST+Euclid photometry, pointed spectroscopy — and **GLADE+ today is row one of every table** | ruling 4 (2026-11-10); hard core ratified 2026-11-10 | high |
+| C-30 | "Channel" is always qualified | Write **information channel** (host association / population / clustering: where the H₀ information comes from) or **likelihood channel** (the estimator's 1D/2D, C-23). Never a bare "channel" | M192 mission page § Context "Words" | medium |
+| C-31 | Secondary-mass frame in the mock | FEW's Pn5AAK waveform is built in the detector frame (`darksiren_emri/waveform_generator.py:98-104`, `frame="detector"`); the mock lifts M (`parameter_space.py:268`) and not μ, so every event has **detector-frame μ_z = 10 M☉** (source-frame μ = 10/(1+z)). μ is a free Fisher parameter and is marginalised in each 14×14 covariance; μ_z carries no redshift information in the mock. Build nothing on "source-frame μ = 10" | M192 REPORT-R1 (reading only; no code change) | high |

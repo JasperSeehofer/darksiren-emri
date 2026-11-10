@@ -156,6 +156,25 @@ not its blinding: its truth (h = 0.67) is public and legible in the run director
 *No `EXP-MTC-*` row is pre-registered in `wiki/meta/agentic-experiments-research.md` yet; the next
 experiment to pre-register is T-1 itself, once the credential lands.*
 
+## Active experiment: Rank 1 (M192, round 1, 2026-11-10)
+
+Beside T-1 (which this does not touch). Prereg `.planning/missions/M192/PREREGISTRATION_RANK1.md`
+(md5 `90dc4200f95f82c8a64b26f302f739c6`). Note `docs/RANK1_NOTE.md`. Hypothesis **H-MTC-popdom**
+(population dominance; kill: R_GLADE < 1.30). Every number is **provisional** until the C-10
+approval of `docs/derivations/rank1_information_budget.md` (card `m192-r1-rank1`).
+
+| claim | value | status |
+|---|---|---|
+| R_GLADE (registered kill number) | undefined: F+P not positive definite along (h, κ) on seed61000 and seed62000 | **INCONCLUSIVE** (registered rule), provisional |
+| R_GLADE, outer-product-of-scores diagnostic (post hoc, not registered) | 2.73 (seed61000), 2.77 (seed62000); N = 139 registered row 6.4 | indicates population dominance; not a verdict |
+| σ_h,cond GLADE+ today, full information channel | 0.050 (6.9 %); population-only identical; association increment negligible | provisional, mock-internal |
+| σ_h, pointed spectroscopy of 20 events | 0.0037 (0.51 %), R = 1.006 | provisional, mock-internal |
+| Toy: population-level α against a realised-catalogue numerator | −0.129 in h (median pull ≈ −2.7) at 4.8× and 9.6× pools; CORRECT closes | toy mechanism, not shown to be the repo's |
+| μ frame in the mock | detector-frame μ_z = 10 M☉ for every event (C-31) | confirmed by reading |
+
+Round 2: empty-catalogue control (named, first); expected Fisher on model-drawn data; a read of
+the repo's α construction against the toy mechanism.
+
 ## Claim history
 
 `CLAIMS.jsonl` (commission-compatible) is created by the first `/commission --research` run on
