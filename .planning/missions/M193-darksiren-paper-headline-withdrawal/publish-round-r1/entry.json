@@ -1,0 +1,26 @@
+{
+  "id": "m193-land",
+  "title": "M193 R1: withdraw the headline in the darksiren paper",
+  "date": "2026-11-10",
+  "mission": "M193",
+  "status": "open",
+  "summary": "The paper no longer states the withdrawn 'M_z halves the H0 error' headline: 23 statements in 5 LaTeX files. Laghi et al. 2021 is corrected and Zhu et al. 2024 is cited from INSPIRE. Rank-1 numbers are marked pending. Text only; the grep finds 0 hits (was 45).",
+  "questions": [
+    {
+      "text": "Land M193 R1? The paper no longer states the withdrawn headline (23 statements in 5 files, listed in the report). Laghi et al. 2021 is corrected and Zhu et al. 2024 is cited from INSPIRE. It is text only; undo is one revert.",
+      "kind": "merge",
+      "chips": [
+        {"label": "Yes, merge", "consequence": "The overseer lands it on darksiren main after the verify gate and deploy/land.sh check; M192 item 1 shrinks to a check."},
+        {"label": "Not yet — fix first", "consequence": "Nothing moves on main; name the statement in a note and a round 2 fixes it."}
+      ],
+      "recommend": "Yes, merge"
+    }
+  ],
+  "suggested": [["Yes, merge", "Not yet — fix first"]],
+  "kind": ["merge"],
+  "yes": ["Yes, merge"],
+  "links": [
+    {"label": "Report: the 23 statements and what stays pending (context)", "href": "/app/previews/m193-land/report.html"},
+    {"label": "REPORT-R1 markdown (context)", "href": "/app/previews/m193-land/REPORT-R1.md"}
+  ]
+}

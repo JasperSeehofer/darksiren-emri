@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M193 R1 — headline withdrawn in the paper</title>
+<style>
+:root{--bg:#111418;--fg:#e6e8eb;--mut:#9aa3ad;--card:#1b2027;--acc:#7cc4ff;--bd:#2a313a}
+@media (prefers-color-scheme:light){:root{--bg:#fafafa;--fg:#1b1f24;--mut:#5a636d;--card:#fff;--acc:#0b62b0;--bd:#dde2e7}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.25rem;margin:0 0 4px}h2{font-size:1rem;margin:22px 0 8px;color:var(--acc)}
+.sub{color:var(--mut);font-size:.9rem;margin:0 0 18px}
+.box{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--acc);border-radius:8px;padding:14px}
+.box p{margin:0 0 10px}.box p:last-child{margin:0}
+.pend{color:var(--acc);font-weight:600}
+ul{padding-left:20px;margin:0}li{margin:0 0 8px}
+a{color:var(--acc)}
+</style></head><body><main>
+<h1>M193 R1: the paper no longer states the withdrawn headline</h1>
+<p class="sub">darksiren-emri · branch mission/M193-darksiren-paper-headline-withdrawal · 2026-11-10</p>
+
+<h2>The one thing to check: the new abstract sentence</h2>
+<div class="box">
+<p>Before: “… we find that including M<sub>z</sub> tightens the H<sub>0</sub> constraint from ~4% to ~1.8% precision, a factor of ~2 improvement.”</p>
+<p>After: “LISA measures M<sub>z</sub> to a fractional precision far below the scatter of any black-hole–galaxy relation, so the mass channel can at best re-weight candidate hosts within that scatter. […] We use Fisher-matrix-based Cramér–Rao bounds … and the completeness-corrected galaxy catalog likelihood of Gray et al. The reference EMRI forecasts assume galaxy catalogues that may not hold the typical host; we quantify what remains. <span class="pend">[RESULT PENDING: Rank-1: every H<sub>0</sub> uncertainty conditional on and marginalised over the EMRI population, the selection function and the black-hole–galaxy relation, for GLADE+ today and for Stage-IV photometric and pointed-spectroscopy scenarios]</span>”</p>
+</div>
+
+<h2>In three lines</h2>
+<ul>
+<li><b>What changed:</b> 23 statements in 5 LaTeX files. The 4% → 1.8% / “factor ~2” claim, the thesis H<sub>0</sub> figures, “first application” and “first direct comparison” are gone. Laghi et al. 2021 is described correctly. Zhu et al. 2024 is cited from its INSPIRE record (Zhu:2024qpp).</li>
+<li><b>What stays pending:</b> every place a Rank-1 number goes carries a blue [RESULT PENDING] marker. No new number or finding of this work is stated. A few thesis-era remnants (N = 223, Δh ~ 0.02, the p<sub>det</sub> = 1 wording, the scatter wording, the title) are left for M192.</li>
+<li><b>Undo:</b> text only (paper, bib, CHANGELOG). No code changed (code tree hash unchanged); undo is one revert.</li>
+</ul>
+<p><a href="REPORT-R1.md">REPORT-R1 (row-by-row table, checks)</a></p>
+</main></body></html>
