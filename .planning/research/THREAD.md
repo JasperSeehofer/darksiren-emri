@@ -25,6 +25,16 @@ of the hypothesis rows: `wiki/meta/hypothesis-ledger.md`.*
 
 ## Hard core
 
+**RATIFIED 2026-11-10** by the author — card `ask-20261110-w19265079bc`, answer *"Ratify the full
+form"*, on PROP-20261110-07 (written here by mission M192, scope item H):
+
+`GR + FLRW + dark-siren likelihood; what LISA EMRIs teach us, with H₀ as one output recoverable from EMRI + catalogue — the catalogue a scenario axis (GLADE+ today · LSST+Euclid photometry · pointed spectroscopy)`
+
+> **Superseded note (2026-11-10).** The text below was the *proposed* hard core from M65. It was
+> **never ratified** and is superseded as the hard core on 2026-11-10 by the ratified wording
+> above (PROP-20261110-07). Its content stays the live hypothesis **H-MTC-genmarg**, tested by
+> T-1 (see Live hypotheses and Active experiment). Kept verbatim below as record.
+
 **[PROPOSED — awaiting author ratification as a [RULE]; not ratified by M65.]**
 
 The closure of the dark-siren H₀ estimator at the injected truth is a consequence of
