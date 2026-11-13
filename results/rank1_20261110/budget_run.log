@@ -1,0 +1,5 @@
+[seed61000] building realisations
+/home/ops/Repositories/darksiren-emri-wt/M192-darksiren-rank1-information-budget/.venv/lib/python3.13/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[seed61000] Omega_m-free row
+[seed62000] building realisations

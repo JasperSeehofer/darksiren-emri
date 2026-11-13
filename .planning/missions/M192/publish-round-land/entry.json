@@ -1,0 +1,26 @@
+{
+  "id": "m192-land",
+  "title": "M192 R1: Rank-1 information budget, line-of-sight toy, paper remnants",
+  "date": "2026-11-10",
+  "mission": "M192",
+  "status": "open",
+  "summary": "Hard core written as ratified. Pre-registration committed before any number. Four thesis-era paper remnants cleared. Fisher budget: provisional, registered verdict INCONCLUSIVE, post-hoc R ≈ 2.7. Toy: a mismatched α reproduces the offset's sign and size. Nothing under darksiren_emri/ changed (tree 71acb98b).",
+  "questions": [
+    {
+      "text": "Land M192 R1? It adds the hard core, the pre-registration, the budget code with tests and readout, the toy, the note, and four paper text edits. darksiren_emri/ is unchanged. Undo is one revert.",
+      "kind": "merge",
+      "chips": [
+        {"label": "Yes, merge", "consequence": "The overseer lands it on darksiren main after the fresh verify PASS; the budget numbers stay provisional until card m192-r1-rank1 Q1."},
+        {"label": "Not yet — fix first", "consequence": "Nothing moves on main; name the fix in a note and a round 2 makes it."}
+      ],
+      "recommend": "Yes, merge"
+    }
+  ],
+  "suggested": [["Yes, merge", "Not yet — fix first"]],
+  "kind": ["merge"],
+  "yes": ["Yes, merge"],
+  "links": [
+    {"label": "REPORT-R1: items, commits, least-confident decisions (context)", "href": "/app/previews/m192-land/REPORT-R1.md"},
+    {"label": "The Rank-1 note (context)", "href": "/app/previews/m192-land/RANK1_NOTE.md"}
+  ]
+}

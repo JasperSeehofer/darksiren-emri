@@ -7,6 +7,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added (line-of-sight toy with a mass dimension, mission M192 item 4, 2026-11-10)
+- **`analysis/rank1/toy/`**: verbatim copy of the advisor's `q4_line_toy.py` (provenance header;
+  excluded from ruff to stay byte-identical) and `q4_mass_toy.py`, which extends it with stellar and
+  black-hole masses, a mass-dependent horizon and six registered variants. 72 universes; readout
+  `results/rank1_20261110/toy/TOY_READOUT.md`. The registered FINITE-α variant (α from a
+  population-drawn injection pool) gives a negative offset of the repo's sign and size at both pool
+  sizes. Post-hoc diagnostics trace it to a population-level α paired with a realised-catalogue
+  numerator, not to pool size.
+
+### Added (Rank-1 information budget, mission M192 item 2, 2026-11-10)
+- **`analysis/rank1/budget.py`** (new; nothing under `darksiren_emri/` changes): a Fisher information
+  budget on the frozen seed61000/seed62000 event tables. It gives σ_h conditional and marginalised
+  (κ, s, a, σ_rel) per information channel, redshift bin and catalogue scenario, GLADE+ today first.
+  Derivation `docs/derivations/rank1_information_budget.md`; PHYSICS-GATE-LEDGER row
+  presented / PENDING-AUTHOR. Readout `results/rank1_20261110/BUDGET_READOUT.md`; **provisional**
+  until the author approves the derivation. Limiting-case tests in `darksiren_emri_test/rank1/`.
+
+### Changed (paper, mission M192 item 1, 2026-11-10)
+- **Paper: four thesis-era remnants cleared and the study's aim restated** (rulings 1 and 3,
+  2026-11-10). M193's done-criterion grep re-run with `/usr/bin/grep`: 0 lines. Removed the thesis
+  baseline N_det = 223 (`results.tex`), the two statements that the results rest on the withdrawn
+  p_det = 1 baseline (`results.tex`, `discussion.tex`) and the thesis-era Δh ~ 0.02
+  (`results.tex`); each is now a `\pending{Rank-1 budget}` marker. `appendix_parameters.tex`
+  states the aim as ruling 3's question (how much H0 information survives marginalising the
+  population, the selection and the black-hole--galaxy relation). The title and the
+  Reines--Volonteri scatter wording go to the author (card `m192-r1-paper`).
+
 ### Changed (paper, 2026-11-10)
 - **Paper: the thesis-era "M_z halves the H0 error" headline is withdrawn** (ruling 1, 2026-11-10;
   mission M193). 23 statements in `paper/main.tex` and `paper/sections/{introduction,discussion,

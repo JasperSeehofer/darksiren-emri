@@ -101,6 +101,7 @@ ignore_missing_imports = true
 [tool.ruff]
 target-version = "py313"
 line-length = 100
+extend-exclude = ["analysis/rank1/toy/q4_line_toy.py"]  # verbatim advisor copy, kept byte-identical (M192)
 
 [tool.ruff.lint]
 select = [

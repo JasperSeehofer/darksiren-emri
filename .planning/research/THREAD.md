@@ -25,6 +25,16 @@ of the hypothesis rows: `wiki/meta/hypothesis-ledger.md`.*
 
 ## Hard core
 
+**RATIFIED 2026-11-10** by the author — card `ask-20261110-w19265079bc`, answer *"Ratify the full
+form"*, on PROP-20261110-07 (written here by mission M192, scope item H):
+
+`GR + FLRW + dark-siren likelihood; what LISA EMRIs teach us, with H₀ as one output recoverable from EMRI + catalogue — the catalogue a scenario axis (GLADE+ today · LSST+Euclid photometry · pointed spectroscopy)`
+
+> **Superseded note (2026-11-10).** The text below was the *proposed* hard core from M65. It was
+> **never ratified** and is superseded as the hard core on 2026-11-10 by the ratified wording
+> above (PROP-20261110-07). Its content stays the live hypothesis **H-MTC-genmarg**, tested by
+> T-1 (see Live hypotheses and Active experiment). Kept verbatim below as record.
+
 **[PROPOSED — awaiting author ratification as a [RULE]; not ratified by M65.]**
 
 The closure of the dark-siren H₀ estimator at the injected truth is a consequence of
@@ -146,6 +156,25 @@ not its blinding: its truth (h = 0.67) is public and legible in the run director
 *No `EXP-MTC-*` row is pre-registered in `wiki/meta/agentic-experiments-research.md` yet; the next
 experiment to pre-register is T-1 itself, once the credential lands.*
 
+## Active experiment: Rank 1 (M192, round 1, 2026-11-10)
+
+Beside T-1 (which this does not touch). Prereg `.planning/missions/M192/PREREGISTRATION_RANK1.md`
+(md5 `90dc4200f95f82c8a64b26f302f739c6`). Note `docs/RANK1_NOTE.md`. Hypothesis **H-MTC-popdom**
+(population dominance; kill: R_GLADE < 1.30). Every number is **provisional** until the C-10
+approval of `docs/derivations/rank1_information_budget.md` (card `m192-r1-rank1`).
+
+| claim | value | status |
+|---|---|---|
+| R_GLADE (registered kill number) | undefined: F+P not positive definite along (h, κ) on seed61000 and seed62000 | **INCONCLUSIVE** (registered rule), provisional |
+| R_GLADE, outer-product-of-scores diagnostic (post hoc, not registered) | 2.73 (seed61000), 2.77 (seed62000); N = 139 registered row 6.4 | indicates population dominance; not a verdict |
+| σ_h,cond GLADE+ today, full information channel | 0.050 (6.9 %); population-only identical; association increment negligible | provisional, mock-internal |
+| σ_h, pointed spectroscopy of 20 events | 0.0037 (0.51 %), R = 1.006 | provisional, mock-internal |
+| Toy: population-level α against a realised-catalogue numerator | −0.129 in h (median pull ≈ −2.7) at 4.8× and 9.6× pools; CORRECT closes | toy mechanism, not shown to be the repo's |
+| μ frame in the mock | detector-frame μ_z = 10 M☉ for every event (C-31) | confirmed by reading |
+
+Round 2: empty-catalogue control (named, first); expected Fisher on model-drawn data; a read of
+the repo's α construction against the toy mechanism.
+
 ## Claim history
 
 `CLAIMS.jsonl` (commission-compatible) is created by the first `/commission --research` run on
@@ -222,3 +251,10 @@ E-8 TRANSFER row maps onto it. **Q5:** the read-only cluster reads R-1/R-2/R-3
 (`POOL_OPTION_MEMO_m2.md` §5) are approved inside an M38 window; they are not yet run.
 *Correction 2026-10-22 (R1c):* Q5's answer "Approve (M38 window)" also covers R-3 (the P2 pairing
 seeds), because the question text named "R-1 … R-2 … R-3"; an earlier version of this line said R-3 was not named.
+
+## Rank 1 pre-registration (mission M192, 2026-11-10)
+
+`.planning/missions/M192/PREREGISTRATION_RANK1.md` — md5 `90dc4200f95f82c8a64b26f302f739c6` — committed before any number of
+the information budget (item 2) or the line-of-sight toy (item 4) was computed (C-14). Never
+edited after its commit; an amendment is a new dated file. Kill criterion (H-MTC-popdom): R_GLADE =
+σ_h,marg / σ_h,cond in the GLADE+-today scenario at the registered priors; R_GLADE < 1.30 refutes.
